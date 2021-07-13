@@ -1,14 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="54" height="31" tilewidth="32" tileheight="32" infinite="1" nextlayerid="30" nextobjectid="1">
- <tileset firstgid="1" source="ircn_StH_bg.tsx"/>
- <tileset firstgid="1675" source="mapmaking/tilesets/Gather Walls Interior 1.x.tsx"/>
- <tileset firstgid="7725" source="ircn_StH_fg.tsx"/>
- <tileset firstgid="9399" source="mapmaking/tilesets/Gather Shadows 1.x.tsx"/>
- <tileset firstgid="9839" source="mapmaking/tilesets/Gather Floors 1.x.tsx"/>
- <tileset firstgid="12559" source="mapmaking/tilesets/Gather Decoration 1.x.tsx"/>
- <tileset firstgid="20119" source="mapmaking/tilesets/Gather Plants Outdoor 2.x.tsx"/>
- <tileset firstgid="21959" source="mapmaking/tilesets/Gather Chairs 1.x.tsx"/>
- <tileset firstgid="22759" source="mapmaking/tilesets/Gather Islands.tsx"/>
+ <tileset firstgid="1" name="ircn_StH_bg" tilewidth="32" tileheight="32" tilecount="1674" columns="54">
+  <image source="ircn_StH2_bg.png" width="1728" height="992"/>
+ </tileset>
+ <tileset firstgid="1675" name="Gather Walls Interior 1.x" tilewidth="32" tileheight="32" tilecount="6050" columns="25">
+  <image source="mapmaking/tilesets/gather_walls_interior_1.6.png" width="800" height="7744"/>
+  <terraintypes>
+   <terrain name="White wall top" tile="427"/>
+   <terrain name="White wall bottoms" tile="452"/>
+   <terrain name="Brick wall tops" tile="927"/>
+   <terrain name="Brick wall bottoms" tile="952"/>
+  </terraintypes>
+  <tile id="251" terrain=",,,0"/>
+  <tile id="254" terrain=",,0,0"/>
+  <tile id="255" terrain=",,0,"/>
+  <tile id="277" terrain=",,1,1"/>
+  <tile id="352" terrain=",,,1"/>
+  <tile id="354" terrain=",,1,"/>
+  <tile id="364" terrain="1,1,1,"/>
+  <tile id="366" terrain="1,1,,1"/>
+  <tile id="377" terrain="1,1,1,1"/>
+  <tile id="389" terrain="0,0,0,"/>
+  <tile id="391" terrain="0,0,,0"/>
+  <tile id="400" terrain=",1,,1"/>
+  <tile id="401" terrain=",0,,0"/>
+  <tile id="402" terrain="0,0,0,0"/>
+  <tile id="405" terrain="0,,0,"/>
+  <tile id="406" terrain="1,,1,"/>
+  <tile id="426" terrain=",0,,"/>
+  <tile id="427" terrain="0,0,,"/>
+  <tile id="430" terrain="0,,,"/>
+  <tile id="439" terrain="0,,0,0"/>
+  <tile id="441" terrain=",0,0,0"/>
+  <tile id="451" terrain=",1,,"/>
+  <tile id="452" terrain="1,1,,"/>
+  <tile id="455" terrain="1,,,"/>
+  <tile id="464" terrain="1,,1,1"/>
+  <tile id="466" terrain=",1,1,1"/>
+  <tile id="751" terrain=",,,2"/>
+  <tile id="752" terrain=",,2,2"/>
+  <tile id="754" terrain=",,2,2"/>
+  <tile id="755" terrain=",,2,"/>
+  <tile id="852" terrain=",,,3"/>
+  <tile id="854" terrain=",,3,"/>
+  <tile id="858" terrain="2,2,,"/>
+  <tile id="859" terrain="2,2,,"/>
+  <tile id="864" terrain="3,3,3,"/>
+  <tile id="866" terrain="3,3,,3"/>
+  <tile id="877" terrain="3,3,3,3"/>
+  <tile id="883" terrain=",,3,3"/>
+  <tile id="884" terrain=",,3,3"/>
+  <tile id="889" terrain="2,2,2,"/>
+  <tile id="891" terrain="2,2,,2"/>
+  <tile id="900" terrain=",3,,3"/>
+  <tile id="901" terrain=",2,,2"/>
+  <tile id="902" terrain="2,2,2,2"/>
+  <tile id="905" terrain="2,,2,"/>
+  <tile id="906" terrain="3,,3,"/>
+  <tile id="926" terrain=",2,,"/>
+  <tile id="927" terrain="2,2,,"/>
+  <tile id="930" terrain="2,,,"/>
+  <tile id="939" terrain="2,,2,2"/>
+  <tile id="941" terrain=",2,2,2"/>
+  <tile id="951" terrain=",3,,"/>
+  <tile id="952" terrain="3,3,,"/>
+  <tile id="953" terrain="3,3,,"/>
+  <tile id="954" terrain="3,3,,"/>
+  <tile id="955" terrain="3,,,"/>
+  <tile id="964" terrain="3,,3,3"/>
+  <tile id="966" terrain=",3,3,3"/>
+ </tileset>
+ <tileset firstgid="7725" name="ircn_StH_fg" tilewidth="32" tileheight="32" tilecount="1674" columns="54">
+  <image source="ircn_StH2_fg.png" trans="ffffff" width="1728" height="992"/>
+ </tileset>
+ <tileset firstgid="9399" name="Gather Shadows 1.x" tilewidth="32" tileheight="32" tilecount="440" columns="10">
+  <image source="mapmaking/tilesets/gather_shadows_1.1.png" width="320" height="1408"/>
+ </tileset>
+ <tileset firstgid="9839" name="Gather Floors 1.x" tilewidth="32" tileheight="32" tilecount="2720" columns="40">
+  <image source="mapmaking/tilesets/gather_floors_1.4.png" width="1280" height="2176"/>
+  <wangsets>
+   <wangset name="Outdoor terrain" tile="2629"/>
+   <wangset name="Wood Platforms" tile="201"/>
+   <wangset name="Stone/Concrete" tile="1401"/>
+   <wangset name="Carpets" tile="417"/>
+   <wangset name="Trims" tile="870"/>
+  </wangsets>
+ </tileset>
+ <tileset firstgid="12559" name="Gather Decoration 1.x" tilewidth="32" tileheight="32" tilecount="7560" columns="36">
+  <image source="mapmaking/tilesets/gather_decoration_1.21.png" width="1152" height="6720"/>
+  <tile id="1660">
+   <animation>
+    <frame tileid="1660" duration="250"/>
+    <frame tileid="1661" duration="250"/>
+    <frame tileid="1662" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1800">
+   <animation>
+    <frame tileid="1800" duration="250"/>
+    <frame tileid="1801" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1836">
+   <animation>
+    <frame tileid="1836" duration="250"/>
+    <frame tileid="1837" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="1872">
+   <animation>
+    <frame tileid="1872" duration="5000"/>
+    <frame tileid="1873" duration="200"/>
+    <frame tileid="1874" duration="200"/>
+    <frame tileid="1875" duration="200"/>
+    <frame tileid="1876" duration="200"/>
+    <frame tileid="1877" duration="200"/>
+   </animation>
+  </tile>
+  <wangsets>
+   <wangset name="Fences (outlines)" tile="6831"/>
+  </wangsets>
+ </tileset>
+ <tileset firstgid="20119" name="Gather Plants Outdoor 2.x" tilewidth="32" tileheight="32" tilecount="1840" columns="40">
+  <image source="mapmaking/tilesets/gather_plants_outdoor_2.0.png" width="1280" height="1472"/>
+  <terraintypes>
+   <terrain name="Hedge (Round, outline only)" tile="1209"/>
+   <terrain name="Hedge (Round, fill)" tile="1168"/>
+   <terrain name="Hedge (Square, outline only)" tile="1449"/>
+   <terrain name="Hedge (Squre, fill)" tile="1408"/>
+  </terraintypes>
+  <tile id="1040" terrain=",,,0"/>
+  <tile id="1041" terrain=",,0,0"/>
+  <tile id="1042" terrain=",,0,"/>
+  <tile id="1043" terrain="0,0,0,"/>
+  <tile id="1044" terrain="0,0,,0"/>
+  <tile id="1080" terrain=",0,,0"/>
+  <tile id="1081" terrain="0,0,0,0"/>
+  <tile id="1082" terrain="0,,0,"/>
+  <tile id="1083" terrain="0,,0,0"/>
+  <tile id="1084" terrain=",0,0,0"/>
+  <tile id="1120" terrain=",0,,"/>
+  <tile id="1121" terrain="0,0,,"/>
+  <tile id="1122" terrain="0,,,"/>
+  <tile id="1160" terrain=",,,1"/>
+  <tile id="1161" terrain=",,1,1"/>
+  <tile id="1162" terrain=",,1,"/>
+  <tile id="1163" terrain="1,1,1,"/>
+  <tile id="1164" terrain="1,1,,1"/>
+  <tile id="1200" terrain=",1,,1"/>
+  <tile id="1201" terrain="1,1,1,1"/>
+  <tile id="1202" terrain="1,,1,"/>
+  <tile id="1203" terrain="1,,1,1"/>
+  <tile id="1204" terrain=",1,1,1"/>
+  <tile id="1240" terrain=",1,,"/>
+  <tile id="1241" terrain="1,1,,"/>
+  <tile id="1242" terrain="1,,,"/>
+  <tile id="1400" terrain=",,,3"/>
+  <tile id="1401" terrain=",,3,3"/>
+  <tile id="1402" terrain=",,3,"/>
+  <tile id="1403" terrain="3,3,3,"/>
+  <tile id="1404" terrain="3,3,,3"/>
+  <tile id="1440" terrain=",3,,3"/>
+  <tile id="1441" terrain="3,3,3,3"/>
+  <tile id="1442" terrain="3,,3,"/>
+  <tile id="1443" terrain="3,,3,3"/>
+  <tile id="1444" terrain=",3,3,3"/>
+  <tile id="1480" terrain=",3,,"/>
+  <tile id="1481" terrain="3,3,,"/>
+  <tile id="1482" terrain="3,,,"/>
+ </tileset>
+ <tileset firstgid="21959" name="Gather Chairs" tilewidth="32" tileheight="32" tilecount="800" columns="25">
+  <image source="mapmaking/tilesets/gather_chairs_1.3.png" width="800" height="1024"/>
+ </tileset>
+ <tileset firstgid="22759" name="Gather Islands" tilewidth="32" tileheight="32" tilecount="480" columns="20">
+  <image source="mapmaking/tilesets/gather_islands.png" width="640" height="768"/>
+  <wangsets>
+   <wangset name="Terrains" tile="198"/>
+  </wangsets>
+ </tileset>
  <group id="22" name="Background">
   <layer id="5" name="gravel" width="54" height="31">
    <data encoding="csv">
